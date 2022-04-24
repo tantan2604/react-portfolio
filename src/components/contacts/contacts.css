@@ -27,4 +27,46 @@
 
 contact__option-icon{
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+}
+
+
+/*----------------Media Queries (Meduim Devices)-----------*/
+@media screen and (max-width: 1024px){
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/*----------------End Media Queries (Meduim Devices)-----------*/
+/*----------------Media Queries (Meduim Small)-----------*/
+@media screen and (max-width: 600px){
+    .container.contact__container{
+        width: var(--container-with-sm);
+    }
+}
+
+/*----------------End Media Queries (Meduim Small)-----------*/
